@@ -1,12 +1,32 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Page d'accueil
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+import { Component } from '@angular/core';
+import {AlertController} from "ionic-angular";
+@Component({
+  selector: 'page-setting',
+  templateUrl: 'settings.html'
+})
+export class SettingsPage {
+  constructor(private alertCtrl: AlertController){
 
-<ion-content padding>
-    <!--<button ion-button="" (click)="onGoToAppareil()"> Appareils</button>-->
-    <button ion-button="" [navPush]="appareilsPage"> Appareils</button>
-</ion-content>
+  }
+  onToggleLights(){
+    let alert = this.alertCtrl.create(
+      {
+        title: 'Etes -vous certains de vouloir continuer ? ',
+        subTitle: 'Allumer ou etteindre les lumieres ?',
+        buttons: [
+          {
+            text: 'Annuler ',
+            role: 'cancel',
+
+          },
+          {
+            text : 'Confirmer',
+            handler: ()=> console.log('confimation !')
+          }
+        ]
+      }
+    );
+    //afficher lalerte
+    alert.present();
+  }
+}

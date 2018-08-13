@@ -1,12 +1,4 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Page de reglages
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  <!--<button ion-button="" (click)="onGoToAppareil()"> Appareils</button>-->
-  <p>Page de reglages</p>
-</ion-content>
+<ion-tabs>
+  <ion-tab [root]="appareilsPage" tabTitle="Appareils" tabIcon="bulb"></ion-tab>
+  <ion-tab [root]="settingsPage" tabTitle="Settings" tabIcon="settings"></ion-tab>
+</ion-tabs>

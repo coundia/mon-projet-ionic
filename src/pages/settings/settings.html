@@ -1,12 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Page d'accueil
+      Page de reglages
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <!--<button ion-button="" (click)="onGoToAppareil()"> Appareils</button>-->
-    <button ion-button="" [navPush]="appareilsPage"> Appareils</button>
+  <!--<button ion-button="" (click)="onGoToAppareil()"> Appareils</button>-->
+  <!--<p>Page de reglages</p>-->
+<button ion-button="" icon-start="" (click)="onToggleLights()">
+  <ion-icon name="power"></ion-icon>
+  Lumieres
+</button>
 </ion-content>
+
