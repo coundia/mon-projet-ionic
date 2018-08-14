@@ -1,3 +1,4 @@
+///<reference path="../pages/options/options.ts"/>
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -11,6 +12,10 @@ import {SingleAppareilPage} from "../pages/appareils/single-appareil/single-appa
 import {SettingsPage} from "../pages/settings/settings";
 import {TabsPage} from "../pages/tabs/tabs";
 import {AppareilsService} from "../services/appareils.service";
+import {OptionsPage} from "../pages/options/options";
+import {AppareilFormPage} from "../pages/appareil-form/appareil-form";
+import {AuthPage} from "../pages/auth/auth";
+import {AuthService} from "../services/auth.service";
 
 @NgModule({
   declarations: [
@@ -20,6 +25,9 @@ import {AppareilsService} from "../services/appareils.service";
     SingleAppareilPage,
     SettingsPage,
     TabsPage,
+    OptionsPage,
+    AppareilFormPage,
+    AuthPage,
   ],
   imports: [
     BrowserModule,
@@ -32,12 +40,16 @@ import {AppareilsService} from "../services/appareils.service";
     AppareilsPage,
     SingleAppareilPage,
     SettingsPage,
+    OptionsPage,
     TabsPage,
+    AppareilFormPage,
+    AuthPage,
   ],
   providers: [
     StatusBar,
     SplashScreen,
     AppareilsService,
+    AuthService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -1,3 +1,24 @@
+//page-single-appareil {
+//  .is-on {
+//    ion-card-content, ion-card-header, ion-grid {
+//      background-color: #eeffee;
+//    }
+//  }
+//  .is-off {
+//    ion-card-content, ion-card-header, ion-grid {
+//      background-color: #ffeeee;
+//    }
+//  }
+//}
 page-single-appareil {
-
+  .is-on {
+    ion-card-content, ion-card-header, ion-grid {
+      background-color: color($colors, secondary-light);
+    }
+  }
+  .is-off {
+    ion-card-content, ion-card-header, ion-grid {
+      background-color: color($colors, danger-light);
+    }
+  }
 }
