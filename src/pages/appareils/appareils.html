@@ -10,7 +10,7 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
+  <ion-content padding>
   <!--<button ion-button="" (click)="onLoadAppareil('Machine a laver')">Machine a laver</button>-->
   <!--<button ion-button="" (click)="onLoadAppareil('Ordinateur')">Ordinateur</button>-->
   <!--<button ion-button="" navPop>Back</button>-->
@@ -24,7 +24,13 @@
     </button>
   </ion-list>
   <button ion-button full (click)="onNewAppareil()">Nouvel appareil</button>
-
+    <ion-card>
+      <ion-card-header>Données</ion-card-header>
+      <ion-card-content>
+        <button ion-button block outline (click)="onSaveList()">Enregistrer</button>
+        <button ion-button block outline (click)="onFetchList()">Récupérer</button>
+      </ion-card-content>
+    </ion-card>
 
 </ion-content>
 <ion-footer>

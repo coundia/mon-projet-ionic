@@ -32,13 +32,14 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
       // Initialize Firebase
+      // Initialize Firebase
       let config = {
-        apiKey: "AIzaSyAgDdeNVUWBtjSnd2Jwq9_7wSqxJqzS5uM",
-        authDomain: "appareil-84f98.firebaseapp.com",
-        databaseURL: "https://appareil-84f98.firebaseio.com",
-        projectId: "appareil-84f98",
-        storageBucket: "appareil-84f98.appspot.com",
-        messagingSenderId: "629324586194"
+        apiKey: "AIzaSyBYL_9bcFeGN8DaphVXl_H12mKeRGESuRQ",
+        authDomain: "projet-ionic-29735.firebaseapp.com",
+        databaseURL: "https://projet-ionic-29735.firebaseio.com",
+        projectId: "projet-ionic-29735",
+        storageBucket: "projet-ionic-29735.appspot.com",
+        messagingSenderId: "315525370687"
       };
       firebase.initializeApp(config);
       firebase.auth().onAuthStateChanged(
